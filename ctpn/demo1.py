@@ -100,8 +100,6 @@ if __name__ == '__main__':
                glob.glob(os.path.join(cfg.DATA_DIR, 'demo', '*.jpg'))
 
     for im_name in im_names:
-        print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-        if 'contain' in im_name or 'auto' in im_name:
-            print(('Demo for {:s}'.format(im_name)))
-            ctpn(sess, net, im_name)
+        print(('Demo for {:s}'.format(im_name)))
+        ctpn(sess, net, im_name)
 
